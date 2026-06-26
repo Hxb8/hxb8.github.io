@@ -1,30 +1,42 @@
 {
-  "name": "myportfolio",
-  "version": "1.0.0",
-  "description": "",
-  "homepage": "https://github.com/Islam0S/myportfolio#readme",
-  "bugs": {
-    "url": "https://github.com/Islam0S/myportfolio/issues"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/Islam0S/myportfolio.git"
-  },
-  "license": "ISC",
-  "author": "",
-  "type": "commonjs",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "dependencies": {
-    "ejs": "^5.0.1",
-    "express": "^5.2.1",
-    "lodash": "^4.17.23",
-    "mongoose": "^9.3.3",
-    "morgan": "^1.10.1"
-  },
-  "devDependencies": {
-    "tailwindcss": "^3.4.19"
-  }
+	"name": "myportfolio",
+	"private": true,
+	"version": "0.0.1",
+	"type": "module",
+	"scripts": {
+		"dev": "vite dev",
+		"build": "vite build",
+		"preview": "vite preview",
+		"prepare": "svelte-kit sync || echo ''",
+		"check": "svelte-kit sync && svelte-check --tsconfig ./tsconfig.json",
+		"check:watch": "svelte-kit sync && svelte-check --tsconfig ./tsconfig.json --watch",
+		"lint": "prettier --check . && eslint .",
+		"format": "prettier --write ."
+	},
+	"devDependencies": {
+		"@eslint/js": "^10.0.1",
+		"@sveltejs/adapter-auto": "^7.0.1",
+		"@sveltejs/kit": "^2.63.0",
+		"@sveltejs/vite-plugin-svelte": "^7.1.2",
+		"@types/node": "^22",
+		"eslint": "^10.4.1",
+		"eslint-config-prettier": "^10.1.8",
+		"eslint-plugin-svelte": "^3.19.0",
+		"globals": "^17.6.0",
+		"prettier": "^3.8.3",
+		"prettier-plugin-svelte": "^4.1.0",
+		"svelte": "^5.56.1",
+		"svelte-check": "^4.6.0",
+		"typescript": "^6.0.3",
+		"typescript-eslint": "^8.60.1",
+		"vite": "^8.0.16"
+	},
+	"dependencies": {
+		"@fontsource/atkinson-hyperlegible": "^5.2.8",
+		"@fontsource/jetbrains-mono": "^5.2.8",
+		"@fontsource/manrope": "^5.2.8",
+		"@lucide/svelte": "^1.21.0",
+		"lucide-svelte": "^1.0.1",
+		"open-props": "^1.7.23"
+	}
 }
