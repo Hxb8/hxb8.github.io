@@ -3,6 +3,8 @@ import adapter from '@sveltejs/adapter-auto';
 import { sveltekit } from '@sveltejs/kit/vite';
 import { defineConfig } from 'vite';
 import { createHighlighter } from 'shiki';
+import remarkToc from 'remark-toc';
+import rehypeSlug from 'rehype-slug';
 import path from 'path';
 import { fileURLToPath } from 'url';
 
@@ -35,7 +37,9 @@ export default defineConfig({
 							const html = escapeSvelte(highlighter.codeToHtml(code, { lang, theme }));
 							return `{@html \`${html}\`}`;
 						}
-					}
+					},
+					remarkPlugins: [remarkToc, { tight: true }],
+					rehypePlugins: [rehypeSlug]
 				})
 			],
 			extensions: ['.svelte', '.svx', '.md']
