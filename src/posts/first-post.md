@@ -1,15 +1,13 @@
 ---
 title: First post
 description: First post
-Date: '2026-6-27'
+date: '2026-06-27'
 categories:
     - sveltekit
     - svelte
     
 published: true
-
 ---
-
 
 ## Markdown
 

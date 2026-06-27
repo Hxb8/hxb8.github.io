@@ -1,7 +1,7 @@
 ---
 title: Second post
 description: Second post
-Date: '2026-6-25'
+date: '2026-06-25'
 categories:
     - sveltekit
     - svelte
@@ -14,4 +14,4 @@ published: true
 Media inside **static** folder is served from `/`.
 
 
-![Svelte](favicon.png)
+![Svelte](favicon.svg)
