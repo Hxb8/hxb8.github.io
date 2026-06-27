@@ -5,8 +5,8 @@
  import 'open-props/buttons'
  import 'open-props/normalize'
  import '../app.css'
-
- let { children } = $props();
+ import PageTransition from './transition.svelte'
+ let { children, data } = $props();
 </script>
 
 <svelte:head>
@@ -15,7 +15,9 @@
 <div class="layout">
     <Header />
     <main>
-        {@render children()}
+		  <PageTransition url={data.url}>
+			  {@render children?.()}
+		  </PageTransition>
     </main>
     <Footer />
 </div>
